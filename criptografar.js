@@ -9,11 +9,18 @@ function criptografar(mensagem, chave) {
 		'z'];
 
 	let criptografada = '';
+	let espacos_vazios = 0;
 
 	for (let i = 0; i < mensagem.length; i++) {
 
-		let letra_criptografada = alfabeto[(alfabeto.indexOf(mensagem[i]) + alfabeto.indexOf(chave[i % chave.length])) % 26];
-		criptografada += letra_criptografada;
+		if (mensagem[i] == ' ') {
+			espacos_vazios ++;
+			criptografada += ' ';
+		} 
+		else {
+			let letra_criptografada = alfabeto[(alfabeto.indexOf(mensagem[i]) + alfabeto.indexOf(chave[(i - espacos_vazios) % chave.length])) % 26];
+			criptografada += letra_criptografada;
+		}
 	}
 
 	return(criptografada);
