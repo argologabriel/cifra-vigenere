@@ -1,5 +1,5 @@
-import {criptografar} from "./criptografar.js";
-import {descriptografar} from "./descriptografar.js";
+import {criptografar} from "../utils/criptografar.js";
+import {descriptografar} from "../utils/descriptografar.js";
 
 // Criptografar
 
