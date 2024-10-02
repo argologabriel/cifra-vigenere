@@ -60,6 +60,18 @@ main h1 {
 	font-style: italic;
 }
 
+#criptografia {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#criptografia section {
+	padding: 12px 48px;
+	border: 1px solid var(--second-color);
+	border-radius: 10px;
+}
+
 #conceito p {
 	padding: 10px 120px;
 	text-align: justify;
@@ -70,7 +82,7 @@ main h1 {
 
 .criptografia {
 	text-align: center;
-	margin: 40px;
+	margin: 0 40px 40px;
 }
 
 input {
@@ -84,6 +96,12 @@ button {
 	width: 160px;
 	border-radius: 10px;
 	font-weight: 600;
+}
+
+button:hover {
+	background-color: var(--second-color);
+	transition: .5s;
+	cursor: pointer;
 }
 
 #copyright {
