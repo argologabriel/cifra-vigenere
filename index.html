@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./style.css">
+	
+	<title>Viginere</title>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<a href="#">Vigenère</a>
+		</h1>
+
+		<nav>
+			<a href="#conceito">Conceito</a>
+			<a href="#criptografar">Criptografar</a>
+			<a href="#descriptografar">Descriptografar</a>
+		</nav>
+	</header>	
+	
+	<main>
+		<section id="conceito">
+
+		<h1>Cifra de Vigenère</h1>
+
+		<p>A cifra de Vigenère é um método de criptografia que usa uma série de diferentes cifras de César baseadas em letras de uma senha. Trata-se de uma versão simplificada de uma mais geral cifra de substituição polialfabética, inventada por Leon Battista Alberti cerca de 1465.</p>
+		
+		<p>A invenção da cifra de Vigenère é erroneamente atribuída a Blaise de Vigenère encontra-se originalmente descrita por Giovan Battista Bellaso no seu livro datado de 1553 com o título La Cifra del Sig. Giovan Battista Bellaso.</p>
+		
+		<p>Esta cifra é muito conhecida porque é fácil de perceber e de pôr em prática, parecendo, a quem tem pouca prática, que é inquebrável (indecifrável). Consequentemente, muitos programadores implementaram esquemas de criptografia nas suas aplicações que são no essencial cifras de Vigenère, e que são facilmente quebradas por qualquer criptoanalista.</p>
+
+		</section>
+		
+		<section id="criptografar" class="criptografia">
+
+			<h1>Criptografar</h1>
+
+			<br>
+
+			<div>
+				<label class="label">Mensagem Original:</label>
+				<input id="c_mensagem" type="text">
+			</div>
+			
+			<br><br>
+
+			<div>
+				<label class="label">Chave de Criptografia:</label>
+				<input id="c_chave" type="text">
+			</div>
+
+			<br><br>
+
+			<div>
+				<label class="label">Mensagem Criptografada:</label>
+				<input id="c_criptografada" type="text" readonly>
+			</div>
+			
+			<br><br>
+
+			<button type="submit" id="btn_criptografar">Criptografar</button>
+
+		</section>
+
+		<section id="descriptografar" class="criptografia">
+
+			<h1>Descriptografar</h1>
+
+			<br>
+
+			<div>
+				<label class="label">Mensagem Criptografada:</label>
+				<input id="d_criptografada" type="text">
+			</div>
+			
+			<br><br>
+
+			<div>
+				<label class="label">Chave de Criptografia:</label>
+				<input id="d_chave" type="text">
+			</div>
+			
+			<br><br>
+
+			<div>
+				<label class="label">Mensagem Original:</label>
+				<input id="d_mensagem" type="text" readonly>
+			</div>
+			
+			<br><br>
+
+			<button type="submit" id="btn_descriptografar">Descriptografar</button>
+
+		</section>
+	</main>
+
+	<footer>
+		<div id="copyright">
+			<p>
+				Desenvolvido por <a href="https://github.com/argologabriel" target="_blank">@argologabriel</a> na trilha de nivelamento da <a class="lawd" href="https://github.com/Lawd-UFS" target="_blank">@LAWD</a>
+			</p>
+		</div>
+	</footer>
+
+	<script src="./script.js" type="module"></script>
+
+</body>
+</html>
