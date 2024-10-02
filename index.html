@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Viginere</title>
+</head>
+<body>
+
+	<header>
+		<h1>Cifra de Viginere</h1>
+	</header>
+	
+	<main>
+		<section id="conceito">
+
+		<p>A cifra de Vigenère é um método de criptografia que usa uma série de diferentes cifras de César baseadas em letras de uma senha. Trata-se de uma versão simplificada de uma mais geral cifra de substituição polialfabética, inventada por Leon Battista Alberti cerca de 1465.</p>
+
+		<p>A invenção da cifra de Vigenère é erroneamente atribuída a Blaise de Vigenère encontra-se originalmente descrita por Giovan Battista Bellaso no seu livro datado de 1553 com o título La Cifra del Sig. Giovan Battista Bellaso.</p>
+
+		<p>Esta cifra é muito conhecida porque é fácil de perceber e de pôr em prática, parecendo, a quem tem pouca prática, que é inquebrável (indecifrável). Consequentemente, muitos programadores implementaram esquemas de criptografia nas suas aplicações que são no essencial cifras de Vigenère, e que são facilmente quebradas por qualquer criptoanalista.</p>
+
+		</section>
+		
+		<section id="#criptografar">
+
+			<h1>Criptografar</h1>
+
+			<br>
+
+			<label class="label">Mensagem:</label>
+			<input id="c_mensagem" type="text">
+
+			<br><br>
+
+			<label class="label">Chave:</label>
+			<input id="c_chave" type="text">
+
+			<br><br>
+
+			<label class="label">Mensagem Criptografada:</label>
+			<input id="c_criptografada" type="text" readonly>
+
+		</section>
+
+		<section id="#descriptografar">
+
+			<h1>Descriptografar</h1>
+
+			<br>
+
+			<label class="label">Mensagem Criptografada:</label>
+			<input id="d_criptografada" type="text">
+
+			<br><br>
+
+			<label class="label">Chave:</label>
+			<input id="d_chave" type="text">
+
+			<br><br>
+
+			<label class="label">Mensagem Descriptografada:</label>
+			<input id="d_mensagem" type="text" readonly>
+
+		</section>
+	</main>
+
+	<footer>
+		<div id="copyright">
+			<p>
+				Desenvolvido por <a href="https://github.com/argologabriel" target="_blank">@argologabriel</a> na trilha de nivelamento da <a class="lawd" href="https://github.com/Lawd-UFS" target="_blank">@LAWD</a>
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
