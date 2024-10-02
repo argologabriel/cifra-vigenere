@@ -1,4 +1,4 @@
-async function descriptografar(criptografada, chave) {
+export async function descriptografar(criptografada, chave) {
 
 	const url = 'https://desafio9.onrender.com/decrypt_message';
 	const dados_enviados = {

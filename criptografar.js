@@ -1,4 +1,4 @@
-function criptografar(mensagem, chave) {
+export function criptografar(mensagem, chave) {
 
 	const alfabeto = [
 		'a', 'b', 'c', 'd', 'e',
