@@ -14,7 +14,7 @@ export function criptografar(mensagem, chave) {
 	for (let i = 0; i < mensagem.length; i++) {
 		
 		let maiuscula = false;
-		if (mensagem[i] != alfabeto[alfabeto.indexOf(mensagem[i].toLowerCase())]) {
+		if (mensagem[i] != mensagem[i].toLowerCase()) {
 			maiuscula = true;
 		}
 
