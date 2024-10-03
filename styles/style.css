@@ -1,0 +1,129 @@
+:root {
+	--primary-color: #272727;
+	--second-color:#1aa89c;
+	--text-color: #f8f8f8;
+	--lawd-color: #43025e;
+	--argolo-color: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	color: var(--text-color);
+	background-color: var(--primary-color);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--second-color);
+	padding: 2em 5em;
+}
+
+header h1 a {
+	font-style: italic;
+}
+
+header a {
+	font-size: 1.5em;
+	font-weight: 600;
+	padding: .75em;
+	color: var(--text-color);
+}
+
+header a:hover {
+	color: var(--argolo-color);
+	transition: .5s;
+}
+
+section {
+	margin: 2em 0;
+}
+
+main h1 {
+	padding: 1em;
+	font-size: 2em;
+	font-weight: 600;
+	text-align: center;
+	font-style: italic;
+}
+
+#criptografia {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#criptografia section {
+	padding: 0.75em 3em;
+	border: 1px solid var(--second-color);
+	border-radius: 0.75em;
+}
+
+#conceito p {
+	padding: 0.75em 7.5em;
+	text-align: justify;
+	text-indent: 1.5em;
+	margin: 0 2em;
+	font-size: 1.2em;
+}
+
+.criptografia {
+	text-align: center;
+	margin: 0 2.5em 2.5em;
+}
+
+input {
+	height: 1.5em;
+	font-weight: 600;
+	border-radius: 0.25em;
+}
+
+button {
+	height: 2.5em;
+	width: 10em;
+	border-radius: 0.75em;
+	font-weight: 600;
+}
+
+button:hover {
+	background-color: var(--second-color);
+	transition: .5s;
+	cursor: pointer;
+}
+
+#copyright {
+	color: var(--text-color);
+	background-color: var(--second-color);
+	padding: 2em 5em;
+	font-weight: 600;
+	font-size: 1.125em;
+}
+
+#copyright p {
+	text-align: center;
+}
+
+#copyright p a {
+	color: var(--argolo-color);
+	font-weight: bold;
+}
+
+#copyright p a:hover {
+	text-decoration: underline;
+}
+
+#copyright .lawd {
+	color: var(--lawd-color);
+}
